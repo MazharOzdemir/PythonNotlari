@@ -1,0 +1,463 @@
+Algoritma Nedir?
+
+Algoritma belli bir problemi çözmek veya belirli bir amaca ulaşmak için tasarlanan yol.
+
+Derleyici Nedir?
+
+Kodun tamamını makine diline çevirir ve hataları tek seferde gösterir. Çalıştırılabilir kod üretir.
+
+Yorumlayıcı Nedir?
+
+Kodu kısım kısım derlerler. Hatanın bulunduğu yerde programın çalışması kesilir. Çalıştırılabilir bir kod üretmezler.  
+
+Kaynak Program (Source Code)
+
+Herhangi bir yazılımın işlenip makine diline çevrilmeden önce insanların okuyup üzerinde çalışabildiği programlama diliyle yazılmış halidir.
+
+Python Editörleri
+
+-Atom
+
+-IDLE
+
+-Jupyter
+
+-PyCharm
+
+-Pydev
+
+-Spyder
+
+-Sublime Text
+
+Çalıştırılabilir Dosya (Executable File)
+
+Bir program dilinde yazılmış kaynak programın derlenmesi ile elde edilen, makine diline dönüştürülmüş ve çalışmaya hazır programa denir. Bu dosyaların Windows, MS-DOS sistemlerdeki uzantısı .exe dir.
+
+Python Nedir?
+
+Python, nesne tabanlı, etkileşimli, yüksek seviyeli bir programlama dilidir.  
+
+Syntax (Sözdizimi)
+
+Yazılım dilinin kuralları.
+
+Değişken Nedir?
+
+Değişken, bilgisayar biliminde niceliğin depolanabileceği, saklanabileceği bir yeri ifade eder.
+
+Değişkenler harfle yada _ ile başlamalı.
+
+Değişken ismi içerisinde _ hariç başka karakter bulunmamalıdır.
+
+Pythona özgü değişken ismi olamayan kodlar vardır bunlara ulaşmak için:
+
+import keyword
+
+keyword.kwlist
+
+Büyük küçük harf uyumuna dikkat edilmelidir.
+
+A,B = B,A = İçindeki değerleri birbirleriyle takas ettirmek için.
+
+Operatörler
+
+% = Kalan (Mod alma)
+
+** = Üs alma
+
+// = Tam sayı bölme
+
+A =A +5 == A+=5
+
+-= , /= , //=
+
+Temel Veri Tipleri
+
+int = Tamsayı veri tipi
+
+float = Ondalıklı sayı veri tipi
+
+bool = iki durum veri tipi
+
+str = Karakter veri tipi (tek tırnakveya çift tırnak)
+
+type(değişken) = veri tipini öğrenmek için 
+
+== —> Karşılaştırma operatörü 
+
+= —> Atama operatörü
+
+Dönüştürme 
+
+veri_tipi (donusturulmek_istenilen_sey) 
+
+#—> Açıklama satırı 
+
+input() —> Veri giriş komutu
+
+Klavyeden girilen değer str veri tipinde kaydoluyor.
+
+İnput parantezinin içinde çift ya da tek tırnak olarak hangi verinin girilmesini istediğimizi yazabiliriz
+
+print() —> Veri çıkış komutu
+
+sep —> Çıktı mesajındaki karakterler arasına ayraç koymak için kullanılır.
+
+print(’e’,’n’,’e’,’s’,sep=’boşluklara_ne_koyulacagi’)
+
+printf(”Yaşiniz?”, end=(’..:’)) —> Komut çalıştırılınca cevabı da aynı satırda alıyor
+
+\n —> alt satıra geçmek için
+
+\t —> Bir tab boşluk bırakmak için
+
+— Koşul İfadeleri —
+
+if = Tek koşula bağlı gerçekleşecek işlemler için
+
+if else= Çift koşula bağlı gerçekleşecek işlemler için
+
+if elif else = Çoklu koşula bağlı gerçekleşecek işlemler için
+
+if şartını sağladıktan sonra : koyuyoruz. Diğerleri içinde geçerli.
+
+and, or , not 
+
+— Döngüler —
+
+for = Döngü sayısı önceden bellidir
+
+while = Döngü sayısı önceden belli olmayıp koşula bağlıdır.
+
+Liste —> Sıralı eleman dizisi  []
+
+in komutu —> ‘Mazhar’ in liste_ad —> Mazhar listede mi? (Tru ya da False değerini döndürür)
+
+not in —> Eğer listede yoksa True değerini döndürür 
+
+range() —> Sayı üretmek için, istenilen aralıkta sayı dizisi oluşturmak için kullanılır.
+
+range(ilk_deger,son_deger)
+
+range(ilk_deger,son_deger,atlanılacak_sayı)
+
+for a in range (0,5) —> 5 kere döndür (Döngü oluşturuyoruz)
+
+while (döngüye_devam_etme_durumu): —> While kullanımı
+
+break —> Döngüden çıkmak için
+
+continue —> O kodu işlemeyip bir sonraki döngü kısmına geçiyor
+
+— Fonksiyonlar — 
+
+Fonksiyon = Programın belli işlevini yerine getiren küçük program parçalarıdır.
+
+def —> Fonksiyon tanımlamak için kullanılır (Defination Function)
+
+def fonksiyon_adi(): —> Fonksiyon tanımlama
+
+Parantezler parametre alır.
+
+return —> Değer döndürmek için
+
+Yerel (Local) Değişkenler —> Fonksiyonda tanımlanan değişkenler
+
+Genel (Global) Değişken —> Fonksiyonun dışında her yerde geçerli olan değişken
+
+global değişken_ismi —> O değişkenin global olduğunu tanımlıyoruz
+
+Fonksiyon belirtip şuanlık içine bir değer yazmayacaksak pass yazarak kodun yine de derlenmesini sağlayabiliriz. (return de buna dahil)
+
+lambda —> Tek satırlık bir fonksşyon tanımlayacaksak
+
+fonksiyon_adi = lambda fonksiyon_parametresi: fonksiyon_işlemi
+
+‘+’ operatörü kullanarak stringleri birleştirebiliriz.
+
+degisken_adi[3:] —> 3. degerden sonrasini yazdırıyor
+
+degisken_adi[:3] —> 3’e kadar olanı yazdır
+
+degisken_adi[1:5] —> 1 ve 5. indisler arasını al
+
+degisken_adi[1::2] —> 1. indisten başla ama 2 şer atlayarak git
+
+degisken_adi[::-1]  —> Tersten yazdırıyor
+
+String değiştirme = degisken_adi = degisken[:3] + ‘istedigimiz_harf’ [4:]
+
+degisken _adi = degisken_adi.replace(”degistirilecek_string”, “yeni_string”)
+
+degisken_adi[:silinecek_karakter_sayisi]
+
+degisken_adi.split(’hangi_karakterden_itibaren_ayrılacağı’)
+
+len(degisken_adi) —> Degiskenin uzunlugunu sayıyor
+
+degiskena_adi.count(”sayilmasini_istedigimiz_sey”)
+
+is —> string karşılaştırırken kullanıyoruz
+
+degisken_adi = ‘str1 {} str2’
+
+degisken_adi.format(Süslü_parantez_yerine_ne_yazdırmak_istiyorsak)
+
+‘arasına_koymak_istediğimiz_karakter’.join(reversed(degisken_adi)) —> Değişkeni ters çevirip karakterler arasına istediğimiz şeyi koyuyoruz
+
+degisken_adi.lower —> Bütün harfleri küçült
+
+degisken_adi.upper —> Bütün harfleri büyüt
+
+degisken_adi.swapcase —> Tam terslerini yapıyor
+
+degisken_adi.capitalize —> İlk harfini büyüt
+
+— Diziler —
+
+Dizi (Array) = Aynı türden elemanların oluşturduğu sıralı objeler
+
+liste_adi.index(aradığımız_eleman) —> Aradığımız eleman hangi indekste onu öğreniyoruz
+
+liste_adi.append(eklenecek_deger) —> Listeye deger eklemek için
+
+liste_adi.insert(hangi_indise_eklenecek, ne_eklenecek)   
+
+liste_1.extend(liste_2) —> Liste 1 in üstüne liste 2 yi ekliyor
+
+liste_adi.reverse() —> Listeyi ters çeviriyor
+
+min(liste_adi) —> En küçük değeri döndürüyor
+
+max(liste_adi) —> En büyük değeri döndürüyor
+
+liste_adi = list(kelime) —> Kelimeyi listeye çevirmiş olduk
+
+liste_adi.remove(”Silmek_istediğimiz_şey”) —> Liste içinden girdiğimiz şeyi siliyor (Sadece 1 tanesini)
+
+liste_Adi.pop(indis_sayisi) —> Girdiğimiz indisteki şeyi siliyor
+
+liste_adi.clear() —> Listenin tamamını silmek istersek
+
+aranan_deger in liste —> Aranan değer listede varsa True değerini döndürür 
+
+liste_adi.sort() —> Listenin içindeki değerler küçükten büyüğe sıralandı 
+
+enumerate(liste_adi) —> Listeyi numaralandırmak için
+
+Yığın (stack)—> Son giren ilk çıkar
+
+liste:append()
+
+liste.pop()
+
+Kuyruk (queue)—> Son giren son çıkar
+
+liste:append()
+
+liste.pop(0)
+
+— Sözlük — 
+
+Sozluk_adi = {’kıs’:1, ‘ilkbahar’:2, ‘yaz’:3 , ‘sonabahar’:4}
+
+sozluk_adi = dict([(’mazhar’,1234)(’enes’,1235)])
+
+sozluk_adi = {} —> Sözlük tanımlamak için
+
+sozluk_adi[1]=’bir’
+
+sozluk_adi[2]=’iki’
+
+sozluk_adi[3]=’uc’
+
+print (sozluk_adi) —> Sözlüğü yazdırmak için
+
+sozluk_adi.get(’anahtar_kelime’, ‘yok’) —> Anahtar kelimenin karşılığını gösteriyor eğer yoksa ekrana yok yazdıracak
+
+sozluk_adi(’anahtar_kelime’) —> O anahtar kelimeyi siler
+
+sozluk_adi.keys() —> Anahtar kelimeleri verir
+
+sozluk_adi.values —> Sadece değerleri verir
+
+ sozluk_adi.items —> Dict komutu ile kurulmuş hali geliyor
+
+kume_adi=set(’degerler’) —> Kume tanımlıyoruz
+
+kume1 | kume2 —> Kumeleri birleştirme
+
+kume1 & kume2 —> Kumelerin kesişimi
+
+kume1 - kume2 —> Kume farkları
+
+Tuple tanımlarken normal parantez kullanılıyor, listede ise köşeli parantez.
+
+Tuple veri tipi sabittir list gibi daha sonradan değiştirilemez.
+
+— Sınıflar —
+
+class sinif_ismi(parametre): —> Sınıf oluşturma
+
+degisken = parametre() —> Nesne oluşturma
+
+def metot (parametre2):
+
+self.parametre= “…”
+
+Fonksiyonlar bir sınıfın altında yer alınca onlara metot diyoruz.
+
+Daha sonra dolduracağımız sınıflara pass yazabiliriz.
+
+Örnek:
+
+class Araba():
+
+def ‘__init__’(self,model,marka,renk):
+
+self.model = model
+
+self.marka = marka
+
+self.renk = renk
+
+Taksi=Araba(2020,”FİAT”,”YEŞİL”)
+
+print(Taksi.model)
+
+Metot yazarken ilk parametreye self girilmesi zorunlu.
+
+Bir sınıf tanımlarken sınıf değişkenleri ‘’__init__’ isimli metod ile atanır. İlk kısma self konulması zorunludur.
+
+İnit metodu içinde return fonksiyonu kullanılmaz.
+
+dir(nesne_adi) —> O nesnenin özelliklerine ulaşmak için
+
+— ile başlayanlar python dilinin kendi ait metodlarıdır
+
+Sınıf oluşturmak aslında bir veri tipi oluşturmaktır.
+
+— Kalıtım — 
+
+Kalıtım (inheritance, üst sınıfa ait olan özelliklerin altsınıflara miras olarak aktarılması özelliğidir. 
+
+class alt_sınıf(üst_sınıf): —> Alt sınıf oluşturma
+
+Eğer arabadaki verileri kullanmaya devam etmek istersek alt class sınıfının içindeki def init’in altına üst_sınıf.—init—(self,parametre1,parametre2…) yazıyoruz.
+
+Tarih eklemek istersek —> import datetime —> datetime.datetime.now()
+
+İmport ettiğimiz bir dosyadaki bütün fonksiyonlara ulaşmak için —> from modül_adi import *
+
+Eğer sadece belli bir fonksiyonu çalıştıracak isek * yerine o fonksiyonu yazıyoruz.
+
+import uzun_kelime as kısa_kelime —> Yazacağımız şeyi kısaltmak için kullanıyoruz. Artık onun yerine daha kısasını kullanmak için.
+
+from math import sqrt —> Math kütüphanesinden sadece sqrt fonksiyonunu getirmek için (Sadece belirli fonksiyonlar kullanacağımız zaman yapıyoruz)
+
+‘__name__ == ‘__main__’ —> True sonucunu döndürüyorsa ana program içindeyizdir
+
+abs() —> İçine girilen sayının mutlak değerini alır
+
+round() —> En yakın tam sayıya çevirir
+
+max(ilk_sayi , ikinci_sayi) —> İçine girilen sayının en büyüğünü çıkartır , min() —> En küçüğünü
+
+pow() —> Sayının kuvvetini alıyor
+
+bin(sayi) —> O sayıyı binary sayı sistemine dönüştürüyor
+
+hex(sayi) —> Hexadecimal karşılığına dönüştürmek için
+
+chr(sayi) —> ASCII koduna dönüştürülmüş hali
+
+sum() —> Toplama
+
+import random —> random.random() —> 0 ile 1 arasında rastgele değer üretir
+
+random.randint(ilk_deger,ikinci_deger) —> İki değer arasında rastgele int değer üretir
+
+random.randrange(ilk_deger,ikinci_deger,atlanılacak_deger) —> İki değer arasında atlaya atlaya değer üretiyor
+
+random.uniform(ilk_deger,ikinci_deger) —> İki değer arasında daha rastgele sayılar üretmek için
+
+random.choice(liste_adi) —> Listenin içinden rastgele bir şey seçmek için
+
+random.shuffle(liste_adi) —> Listenin içeriğini karıştırıyor
+
+random.sample(liste_adi, kaç_eleman_istiyoruz) —> Kaç tane istediğimize bağlı olarak karışık iki tane seçiyor
+
+— Turtle —
+
+import turtle —> Koordinat sistemi için
+
+turtle.poisition() —> turtle.pos() —> Posizyonunu öğrenmek için
+
+turtle.goto(x,y) —> x y pozisyonuna gitmek için
+
+turtle.setposition(x,y) —> turtle.setpos(x,y —> ) x y pozisyonuna gitmek için
+
+turtle.reset() —> turtle.home —>  0 noktasına dönmek için
+
+turtle.setx(deger) —> Sadece x parametresini değiştirmiş oluruz y için de geçerli
+
+turtle.forward(deger) —> İleri gitmesi için —> turtle.fd()
+
+turtle.backward(deger) —> Geri gitmesi için —> turtle.bk(deger)
+
+turtle.right(açı) —> Sağ döndürmek için açı derecesi giriyoruz —> turtle.rt
+
+turtle.left(açı) —> turtle.lt
+
+turtle.getshapes() —> Turtle simgelerini öğrenmek için
+
+turtle.shape(’turtle’) —> Şekli kamlumbağa yapmak için
+
+turtle.hideturtle() —> Simgeyi saklamak için
+
+turtle.showturtle() —> Simgeyi göstermek için
+
+pensize() —> Kalınlık ayarlamak için
+
+color(kalem_rengi, dolgu_rengi)
+
+begin_fill() —> Doldurmak
+
+end_fill() —> Doldurmayı bitirmek
+
+circle(yaricap) —> Daire oluşturmak için
+
+— Olay (Event) —
+
+onclick(f) —> onscreenclick(f) —> Mouse butonu tıklandığında f fonksiyonunu çağırır.
+
+onrelease(f) —> Mouse butonu bıraklıldığında f fonksiyonunu çağırır
+
+ondrag(f) —> Mouse sürüklenmesi olduğunda f foksiyonunu çağırır.
+
+listen() —> Tuş olaylarını yakalamak için turtle ekranını dinler
+
+onkey(f,tus) —> onkeyrelease(f,tus) —> İlgili klavye tuşu bırakıldığında f tuşunu çağırır
+
+onkeypress(f,tus) —> İlgili klavye tuşuna basıldığında f isimli fonksiyonu çağırır
+
+ontimer(f,t) —> t milisaniye sonra f isimli fonksiyonu çağıracak sayaç kurar
+
+mainloop() —> done() —> Olay yakalama döngüsünü başlatır
+
+exitonclick() —> Mouseye tıklandığında bye() fonksiyonunu çağırır
+
+textinput(”başlık”,”mesaj”) —> Bir iletişim kutusu içersinde str tipte veri girilmesini bekler
+
+numinput(”başlık”,”mesaj”) —> Bir iletişim kutusu içerisinde float tipte veri girilmesini bekler
+
+write() —> Ekrana yazı yazar
+
+delay() —> Milisaniye cinsinden gecikmeyi ayarlar
+
+tracer(n,delay) —> Animasyon ayarlarını değiştirir
+
+update() —> Çizim ekranını günceller
+
+distance() —> Aradaki mesafeyi verir
